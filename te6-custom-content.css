@@ -1,48 +1,48 @@
 @-moz-document url("about:newtab") {
-	* {
-		--radius: 18px;
-	}
+  * {
+    --radius: 18px;
+  }
 
-	.outer-wrapper {
-		width: 100vw !important;
-		height: 100vh !important;
-		display: flex !important;
-		padding: 0 !important;
-		padding-bottom: 20vh !important;
-	}
+  .outer-wrapper {
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex !important;
+    padding: 0 !important;
+    padding-bottom: 20vh !important;
+  }
 
-	#newtab-search-text {
-		border-radius: var(--radius) !important;
-		box-shadow: 0 3px 5px rgba(40, 40, 40, 0.12) !important;
-		transition: box-shadow 0.3s !important;
-	}
+  #newtab-search-text {
+    border-radius: var(--radius) !important;
+    box-shadow: 0 3px 5px rgba(40, 40, 40, 0.12) !important;
+    transition: box-shadow 0.3s !important;
+  }
 
-	#newtab-search-text:hover {
-		box-shadow: 0 6px 8px rgba(40, 40, 40, 0.2) !important;
-	}
+  #newtab-search-text:hover {
+    box-shadow: 0 6px 8px rgba(40, 40, 40, 0.2) !important;
+  }
 
-	#newtab-search-text:focus {
-		border: none !important;
-		box-shadow: 0 5px 6px rgba(40, 40, 40, 0.26) !important;
-	}
+  #newtab-search-text:focus {
+    border: none !important;
+    box-shadow: 0 5px 6px rgba(40, 40, 40, 0.26) !important;
+  }
 
-	#searchSubmit {
-		border-radius: 0 var(--radius) var(--radius) 0 !important;
-	}
+  #searchSubmit {
+    border-radius: 0 var(--radius) var(--radius) 0 !important;
+  }
 
-	#searchSubmit:active {
-		border: none !important;
-	}
+  #searchSubmit:active {
+    border: none !important;
+  }
 
-	#newtab-search-text:placeholder-shown + #searchSubmit {
-		display: none !important;
-	}
+  #newtab-search-text:placeholder-shown + #searchSubmit {
+    display: none !important;
+  }
 
-	.search-inner-wrapper:active #newtab-search-text {
-		border: none !important;
-	}
+  .search-inner-wrapper:active #newtab-search-text {
+    border: none !important;
+  }
 
-	#root > div > span > button.icon-settings {
-		display: none !important;
-	}
+  #root > div > span > button.icon-settings {
+    display: none !important;
+  }
 }

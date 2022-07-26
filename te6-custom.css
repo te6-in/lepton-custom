@@ -1,136 +1,124 @@
 #navigator-toolbox {
-	border: none !important;
+  border: none !important;
 }
 
 #tabbrowser-arrowscrollbox label.tab-text.tab-label,
 #urlbar-input,
 #PlacesToolbar,
 #urlbar-results {
-	font-family: "SF Pro Text", "Pretendard", "Noto Sans CJK KR", sans-serif !important;
+  font-family: "SF Pro Text", "Pretendard", "Noto Sans CJK KR", sans-serif !important;
 }
 
 #PlacesToolbarItems {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #PlacesToolbarItems toolbarbutton.bookmark-item {
-	margin-bottom: 4px !important;
+  margin-bottom: 4px !important;
 }
 
 #PlacesToolbarItems toolbarbutton.bookmark-item > image {
-	display: none;
+  display: none;
 }
 
 #PlacesToolbarItems toolbarbutton.bookmark-item > label {
-	font-size: x;
-	opacity: 0.6;
+  font-size: x;
+  opacity: 0.6;
 }
 
 .titlebar-spacer[type="pre-tabs"] {
-	width: 10px !important;
+  width: 10px !important;
 }
 
 :root:not([chromemargin], [inFullscreen]) .titlebar-buttonbox-container,
 :root[inFullscreen] .titlebar-spacer,
 :root:not([tabsintitlebar]) .titlebar-spacer {
-	display: -moz-box !important;
-	width: 2px !important;
+  display: -moz-box !important;
+  width: 2px !important;
 }
 
 .titlebar-spacer[type="post-tabs"] {
-	width: 2px !important;
+  width: 2px !important;
 }
 
 .tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]) {
-	max-width: 200px !important;
+  max-width: 200px !important;
 }
 
-#tabbrowser-arrowscrollbox
-	tab.tabbrowser-tab[selected="true"]
-	vbox.tab-background {
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12) !important;
+#tabbrowser-arrowscrollbox tab.tabbrowser-tab[selected="true"] vbox.tab-background {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12) !important;
 }
 
-#tabbrowser-arrowscrollbox
-	tab.tabbrowser-tab[selected="true"]
-	label.tab-text.tab-label {
-	font-weight: 500;
+#tabbrowser-arrowscrollbox tab.tabbrowser-tab[selected="true"] label.tab-text.tab-label {
+  font-weight: 500;
 }
 
 #tabbrowser-arrowscrollbox tab.tabbrowser-tab vbox.tab-background {
-	border-radius: 6px !important;
-	margin-block: 5px !important;
+  border-radius: 6px !important;
+  margin-block: 5px !important;
 }
 
 #tabs-newtab-button {
-	margin: 5px 0 5px 0 !important;
+  margin: 5px 0 5px 0 !important;
 }
 
 #tabbrowser-arrowscrollbox label.tab-text.tab-label {
-	font-size: 13px;
-	margin-block: 0 1px !important;
+  font-size: 13px;
+  margin-block: 0 1px !important;
 }
 
-#tabbrowser-arrowscrollbox
-	tab.tabbrowser-tab
-	image.tab-close-button.close-icon {
-	display: none;
-	margin-right: -2px !important;
+#tabbrowser-arrowscrollbox tab.tabbrowser-tab image.tab-close-button.close-icon {
+  display: none;
+  margin-right: -2px !important;
 }
 
-#tabbrowser-arrowscrollbox
-	tab.tabbrowser-tab:hover
-	image.tab-close-button.close-icon {
-	display: initial;
+#tabbrowser-arrowscrollbox tab.tabbrowser-tab:hover image.tab-close-button.close-icon {
+  display: initial;
 }
 
 #nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child,
-#nav-bar-customization-target
-	> toolbarpaletteitem:first-child
-	> :is(toolbarbutton, toolbaritem) {
-	padding-inline-start: 6px !important;
+#nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
+  padding-inline-start: 6px !important;
 }
 
 #PanelUI-menu-button {
-	padding-inline-end: 6px !important;
+  padding-inline-end: 6px !important;
 }
 
 #urlbar-input {
-	font-size: 15px !important;
-	text-align: center !important;
+  font-size: 15px !important;
+  text-align: center !important;
 }
 
 #urlbar[focused="true"] #urlbar-input {
-	text-align: left !important;
+  text-align: left !important;
 }
 
 tab.tabbrowser-tab[first-visible-tab="true"] vbox.tab-background::before {
-	display: none !important;
+  display: none !important;
 }
 
-#navigator-toolbox:not(:hover)
-	#urlbar:not([focused="true"])
-	#urlbar-background {
-	background-color: transparent !important;
+#navigator-toolbox:not(:hover) #urlbar:not([focused="true"]) #urlbar-background {
+  background-color: transparent !important;
 }
 
 #urlbar:not([focused="true"]) #urlbar-background {
-	border: none !important;
+  border: none !important;
 }
 
 .identity-box-button:not([open="true"]):not(:hover),
 #urlbar-label-box {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 #star-button[starred] {
-	fill-opacity: var(--urlbar-icon-fill-opacity) !important;
-	fill: currentColor !important;
+  fill-opacity: var(--urlbar-icon-fill-opacity) !important;
+  fill: currentColor !important;
 }
 
 scrollbox[orient="horizontal"] {
-	-moz-box-pack: center;
+  -moz-box-pack: center;
 }
 
 /* ------------------------------------ */
@@ -138,7 +126,7 @@ scrollbox[orient="horizontal"] {
 /* ------------------------------------ */
 
 :root:not(:-moz-window-inactive) #navigator-toolbox {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 :root #TabsToolbar,
@@ -146,14 +134,14 @@ scrollbox[orient="horizontal"] {
 :root #nav-bar,
 :root #PersonalToolbar,
 :root #tabbrowser-tabs {
-	-moz-appearance: -moz-mac-vibrant-titlebar-light !important;
-	background-color: transparent !important;
+  -moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+  background-color: transparent !important;
 }
 
 /* De-emphasize tab icons and names when window is unfocused */
 :root:-moz-window-inactive .tab-content,
 :root:-moz-window-inactive #urlbar {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
 /* make tabs toolbar translucent */
@@ -161,59 +149,57 @@ scrollbox[orient="horizontal"] {
 /* FF 100< lwt-default-theme-in-dark-mode="true" */
 :root:not(:-moz-window-inactive [lwt-default-theme-in-dark-mode]) #TabsToolbar,
 :root:not(:-moz-window-inactive [lwt-default-theme-in-dark-mode]) #nav-bar,
-:root:not(:-moz-window-inactive [lwt-default-theme-in-dark-mode])
-	#PersonalToolbar {
-	-moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+:root:not(:-moz-window-inactive [lwt-default-theme-in-dark-mode]) #PersonalToolbar {
+  -moz-appearance: -moz-mac-vibrant-titlebar-light !important;
 }
 :root:not(:-moz-window-inactive)[lwt-default-theme-in-dark-mode] #TabsToolbar,
 :root:not(:-moz-window-inactive)[lwt-default-theme-in-dark-mode] #nav-bar,
-:root:not(:-moz-window-inactive)[lwt-default-theme-in-dark-mode]
-	#PersonalToolbar {
-	-moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
+:root:not(:-moz-window-inactive)[lwt-default-theme-in-dark-mode] #PersonalToolbar {
+  -moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
 }
 
 :root:not(:-moz-window-inactive):not([lwt-default-theme-in-dark-mode])
-	#navigator-toolbox:hover
-	#urlbar:not([focused="true"])
-	#urlbar-background {
-	background-color: rgba(40, 40, 40, 0.15) !important;
+  #navigator-toolbox:hover
+  #urlbar:not([focused="true"])
+  #urlbar-background {
+  background-color: rgba(40, 40, 40, 0.15) !important;
 }
 
 :root:not(:-moz-window-inactive)[lwt-default-theme-in-dark-mode]
-	#navigator-toolbox:hover
-	#urlbar:not([focused="true"])
-	#urlbar-background {
-	background-color: rgba(215, 215, 215, 0.15) !important;
+  #navigator-toolbox:hover
+  #urlbar:not([focused="true"])
+  #urlbar-background {
+  background-color: rgba(215, 215, 215, 0.15) !important;
 }
 
 :root:-moz-window-inactive #urlbar-background {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 :root:not([lwt-default-theme-in-dark-mode])
-	#tabbrowser-arrowscrollbox
-	tab.tabbrowser-tab[selected="true"]
-	vbox.tab-background {
-	background: rgba(255, 255, 255, 0.75) !important;
+  #tabbrowser-arrowscrollbox
+  tab.tabbrowser-tab[selected="true"]
+  vbox.tab-background {
+  background: rgba(255, 255, 255, 0.75) !important;
 }
 
 :root[lwt-default-theme-in-dark-mode]
-	#tabbrowser-arrowscrollbox
-	tab.tabbrowser-tab[selected="true"]
-	vbox.tab-background {
-	background: rgba(205, 205, 205, 0.15) !important;
+  #tabbrowser-arrowscrollbox
+  tab.tabbrowser-tab[selected="true"]
+  vbox.tab-background {
+  background: rgba(205, 205, 205, 0.15) !important;
 }
 
 :root[lwt-default-theme-in-dark-mode] {
-	--toolbarbutton-hover-background: rgba(255, 255, 255, 0.1) !important;
-	--toolbarbutton-active-background: rgba(255, 255, 255, 0.2) !important;
-	--toolbar-field-color: white !important;
-	--lwt-tab-text: white !important;
+  --toolbarbutton-hover-background: rgba(255, 255, 255, 0.1) !important;
+  --toolbarbutton-active-background: rgba(255, 255, 255, 0.2) !important;
+  --toolbar-field-color: white !important;
+  --lwt-tab-text: white !important;
 }
 
 :root:not([lwt-default-theme-in-dark-mode]) {
-	--toolbarbutton-hover-background: rgba(0, 0, 0, 0.1) !important;
-	--toolbarbutton-active-background: rgba(0, 0, 0, 0.2) !important;
-	--toolbar-field-color: black !important;
-	--lwt-tab-text: black !important;
+  --toolbarbutton-hover-background: rgba(0, 0, 0, 0.1) !important;
+  --toolbarbutton-active-background: rgba(0, 0, 0, 0.2) !important;
+  --toolbar-field-color: black !important;
+  --lwt-tab-text: black !important;
 }
