@@ -29,4 +29,20 @@
 	#searchSubmit {
 		border-radius: 0 var(--radius) var(--radius) 0 !important;
 	}
+
+	#searchSubmit:active {
+		border: none !important;
+	}
+
+	#newtab-search-text:placeholder-shown + #searchSubmit {
+		display: none !important;
+	}
+
+	.search-inner-wrapper:active #newtab-search-text {
+		border: none !important;
+	}
+
+	#root > div > span > button.icon-settings {
+		display: none !important;
+	}
 }

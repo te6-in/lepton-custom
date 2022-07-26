@@ -49,7 +49,7 @@
 #tabbrowser-arrowscrollbox
 	tab.tabbrowser-tab[selected="true"]
 	vbox.tab-background {
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16) !important;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12) !important;
 }
 
 #tabbrowser-arrowscrollbox
@@ -61,6 +61,10 @@
 #tabbrowser-arrowscrollbox tab.tabbrowser-tab vbox.tab-background {
 	border-radius: 6px !important;
 	margin-block: 5px !important;
+}
+
+#tabs-newtab-button {
+	margin: 5px 0 5px 0 !important;
 }
 
 #tabbrowser-arrowscrollbox label.tab-text.tab-label {
@@ -120,6 +124,11 @@ tab.tabbrowser-tab[first-visible-tab="true"] vbox.tab-background::before {
 	background-color: transparent !important;
 }
 
+#star-button[starred] {
+	fill-opacity: var(--urlbar-icon-fill-opacity) !important;
+	fill: currentColor !important;
+}
+
 scrollbox[orient="horizontal"] {
 	-moz-box-pack: center;
 }
@@ -147,20 +156,6 @@ scrollbox[orient="horizontal"] {
 	opacity: 0.6;
 }
 
-/* recolor toolbar button hover/active bg colors to semi-transparent */
-:root {
-	--toolbarbutton-hover-background: color-mix(
-		in srgb,
-		currentColor 11%,
-		transparent
-	) !important;
-	--toolbarbutton-active-background: color-mix(
-		in srgb,
-		currentColor 21%,
-		transparent
-	) !important;
-}
-
 /* make tabs toolbar translucent */
 /* FF 99 > lwthemetextcolor="bright" */
 /* FF 100< lwt-default-theme-in-dark-mode="true" */
@@ -177,7 +172,7 @@ scrollbox[orient="horizontal"] {
 	-moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
 }
 
-:root:not(:-moz-window-inactive [lwt-default-theme-in-dark-mode])
+:root:not(:-moz-window-inactive):not([lwt-default-theme-in-dark-mode])
 	#navigator-toolbox:hover
 	#urlbar:not([focused="true"])
 	#urlbar-background {
@@ -189,4 +184,36 @@ scrollbox[orient="horizontal"] {
 	#urlbar:not([focused="true"])
 	#urlbar-background {
 	background-color: rgba(215, 215, 215, 0.15) !important;
+}
+
+:root:-moz-window-inactive #urlbar-background {
+	background-color: transparent !important;
+}
+
+:root:not([lwt-default-theme-in-dark-mode])
+	#tabbrowser-arrowscrollbox
+	tab.tabbrowser-tab[selected="true"]
+	vbox.tab-background {
+	background: rgba(255, 255, 255, 0.75) !important;
+}
+
+:root[lwt-default-theme-in-dark-mode]
+	#tabbrowser-arrowscrollbox
+	tab.tabbrowser-tab[selected="true"]
+	vbox.tab-background {
+	background: rgba(205, 205, 205, 0.15) !important;
+}
+
+:root[lwt-default-theme-in-dark-mode] {
+	--toolbarbutton-hover-background: rgba(255, 255, 255, 0.1) !important;
+	--toolbarbutton-active-background: rgba(255, 255, 255, 0.2) !important;
+	--toolbar-field-color: white !important;
+	--lwt-tab-text: white !important;
+}
+
+:root:not([lwt-default-theme-in-dark-mode]) {
+	--toolbarbutton-hover-background: rgba(0, 0, 0, 0.1) !important;
+	--toolbarbutton-active-background: rgba(0, 0, 0, 0.2) !important;
+	--toolbar-field-color: black !important;
+	--lwt-tab-text: black !important;
 }
