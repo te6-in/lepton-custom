@@ -1,5 +1,6 @@
 #navigator-toolbox {
   border: none !important;
+  --container-position-y: 16px !important;
 }
 
 #tabbrowser-arrowscrollbox label.tab-text.tab-label,
@@ -69,12 +70,24 @@
 }
 
 #tabbrowser-arrowscrollbox tab.tabbrowser-tab image.tab-close-button.close-icon {
-  display: none;
   margin-right: -2px !important;
 }
 
+#tabbrowser-arrowscrollbox tab.tabbrowser-tab:not([selected="true"]) image.tab-close-button.close-icon {
+  display: none;
+}
+
 #tabbrowser-arrowscrollbox tab.tabbrowser-tab:hover image.tab-close-button.close-icon {
-  display: initial;
+  display: -moz-inline-box;
+}
+
+#tabbrowser-arrowscrollbox .tabbrowser-tab[visuallyselected]:not([pinned]) .tab-content::before {
+  width: calc(100% - 2 * var(--inline-tab-padding)) !important;
+}
+
+.tab-content:not([titlechanged])::before {
+  width: 16px !important;
+  transform: translate(0px, var(--container-position-y)) !important;
 }
 
 #nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child,
