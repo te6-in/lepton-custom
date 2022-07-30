@@ -148,6 +148,7 @@ scrollbox[orient="horizontal"] {
 :root #PersonalToolbar,
 :root #tabbrowser-tabs {
   -moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+  -moz-appearance: -moz-mac-source-list !important;
   background-color: transparent !important;
 }
 
@@ -164,11 +165,13 @@ scrollbox[orient="horizontal"] {
 :root:not(:-moz-window-inactive [lwt-default-theme-in-dark-mode]) #nav-bar,
 :root:not(:-moz-window-inactive [lwt-default-theme-in-dark-mode]) #PersonalToolbar {
   -moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+  -moz-appearance: -moz-mac-source-list !important;
 }
 :root:not(:-moz-window-inactive)[lwt-default-theme-in-dark-mode] #TabsToolbar,
 :root:not(:-moz-window-inactive)[lwt-default-theme-in-dark-mode] #nav-bar,
 :root:not(:-moz-window-inactive)[lwt-default-theme-in-dark-mode] #PersonalToolbar {
   -moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
+  -moz-appearance: -moz-mac-source-list !important;
 }
 
 :root:not(:-moz-window-inactive):not([lwt-default-theme-in-dark-mode])
