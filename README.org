@@ -1,3 +1,22 @@
+* lepton-custom
+  Forked from [[https://github.com/black7375/Firefox-UI-Fix][Firefox-UI-Fix (Lepton)]]
+  
+[[https://i.imgur.com/4Y5VUbG.png]]
+
+** What is the difference?
+- macOS style translucent blur effect is applied.
+- The gray background is removed from the URL & search bar. It appears when you hover on the toolbox.
+- The tab close button from inactive tabs are hidden. You can hover over the tab to make it appear.
+- Favicons are hidden from the bookmarks bar.
+- Most parts of the UI are center-aligned.
+- New tab page is cleaner.
+
+** Acknowledgements
+- [[https://github.com/zvuc/firefox-macos-native-tabbar][firefox-macos-native-tabbar]]
+-----
+Below is the original README.
+-----
+
 * Lepton (old name: Proton Fix) - Proton Styled
   :PROPERTIES:
   :TOC:      :include all
