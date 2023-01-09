@@ -3064,6 +3064,7 @@
   .urlbarView-button,
   .urlbarView-tip-button,
   .urlbarView-action,
+  .tab-close-button,
   toolbarbutton.bookmark-item:not(.subviewbutton),
   #sidebar-switcher-target {
     --toolbarbutton-border-radius: 0; /* Original: 4px */
@@ -3079,6 +3080,11 @@
   #TabsToolbar .toolbarbutton-1:not(#tabs-newtab-button),
   .tab-close-button {
     --tab-border-radius: var(--toolbarbutton-border-radius);
+  }
+}
+@supports -moz-bool-pref("userChrome.rounding.square_dialog") {
+  .dialogBox {
+    border-radius: 0 !important;
   }
 }
 @supports -moz-bool-pref("userChrome.rounding.square_panel") {
