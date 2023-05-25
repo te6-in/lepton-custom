@@ -104,7 +104,8 @@ menu.share-tab-url-item {
   --menuitem-image: url("../icons/toolbar.svg");
 }
 #viewSidebarMenuMenu {
-  --menuitem-image: url("chrome://browser/skin/sidebars.svg");
+  // --menuitem-image: url("chrome://browser/skin/sidebars.svg");
+  --menuitem-image: var(--uc-sidebar-icon);
 }
 
 #viewFullZoomMenu {
@@ -143,12 +144,25 @@ menu.share-tab-url-item {
   --menuitem-image: url("chrome://browser/skin/customize.svg");
 }
 
+/* viewSidebarMenu sub menu */
+#menu_bookmarksSidebar {
+  --menuitem-image: url("chrome://browser/skin/bookmark.svg");
+}
+#menu_historySidebar {
+  --menuitem-image: url("chrome://browser/skin/history.svg");
+}
+#menu_tabsSidebar {
+  --menuitem-image: url("../icons/synced-tabs.svg");
+}
+
 /* viewFullZoomMenu sub menu */
 #menu_zoomEnlarge {
   --menuitem-image: url("chrome://browser/skin/add-circle-fill.svg");
+  stroke: transparent !important;
 }
 #menu_zoomReduce {
   --menuitem-image: url("chrome://browser/skin/subtract-circle-fill.svg");
+  stroke: transparent !important;
 }
 #menu_zoomReset {
   --menuitem-image: url("../icons/resize.svg");

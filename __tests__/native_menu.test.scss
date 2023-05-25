@@ -9,7 +9,13 @@
         @include native_menu.NativeMenu {
           @include example;
         }
-        @include native_menu.Win10_NativeMenu {
+        @include native_menu.NativeMenuPopup {
+          @include example;
+        }
+        @include native_menu.WinNativeMenu {
+          @include example;
+        }
+        @include native_menu.WinNonNativeMenu {
           @include example;
         }
       }
@@ -17,7 +23,14 @@
         @supports -moz-bool-pref("widget.macos.native-context-menus") or -moz-bool-pref("widget.gtk.native-context-menus") {
           @include example;
         }
+        menupopup:is(#historyMenuPopup, #bookmarksMenuPopup),
+        menupopup:not([placespopup="true"]) {
+          @include example;
+        }
         @media not (-moz-windows-non-native-menus) {
+          @include example;
+        }
+        @media (-moz-windows-non-native-menus) {
           @include example;
         }
       }
