@@ -2,6 +2,7 @@
 @import url("css/leptonChrome.css");
 
 /** Add your custom styles below **********************************************/
+@import url("macos-native-tabbar.css");
 @import url("te6-custom.css");
 
 /* Enable option to edit bookmark URLs under Add Bookmark (blue star) menu */

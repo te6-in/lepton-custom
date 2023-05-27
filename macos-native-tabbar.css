@@ -1,0 +1,53 @@
+/* ------------------------------------ */
+/* Firefox Translucent Tabbar for macOS */
+/* ------------------------------------ */
+
+:root:not(:-moz-window-inactive) #navigator-toolbox {
+   background-color: transparent !important;
+}
+
+:root #TabsToolbar,
+:root #titlebar,
+:root #tabbrowser-tabs,
+:root #nav-bar,
+:root #PersonalToolbar {
+   -moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+   -moz-appearance: -moz-mac-source-list !important;
+   background-color: transparent !important;
+}
+
+/* De-emphasize tab icons and names when window is unfocused */
+:root:-moz-window-inactive .tab-content {
+   opacity: 0.6;
+}
+
+/* recolor toolbar button hover/active bg colors to semi-transparent */
+:root {
+   --toolbarbutton-hover-background: color-mix(in srgb, currentColor 11%, transparent) !important;
+   --toolbarbutton-active-background: color-mix(in srgb, currentColor 21%, transparent) !important;
+}
+
+/* make tabs toolbar translucent */
+/* FF 99 > lwthemetextcolor="bright" */
+/* FF 100< lwt-default-theme-in-dark-mode="true" */
+:root:not(:-moz-window-inactive [lwt-default-theme-in-dark-mode]) #TabsToolbar {
+   -moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+   -moz-appearance: -moz-mac-source-list !important;
+}
+
+:root:not(:-moz-window-inactive)[lwt-default-theme-in-dark-mode] #TabsToolbar {
+   -moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
+   -moz-appearance: -moz-mac-source-list !important;
+}
+
+:root:-moz-window-inactive[lwt-default-theme-in-dark-mode] {
+   --lwt-accent-color-inactive: rgb(40, 40, 40) !important;
+}
+
+:root:not([lwt-default-theme-in-dark-mode]) .tabbrowser-tab:not([selected="true"]) {
+   color: #000 !important;
+}
+
+:root[lwt-default-theme-in-dark-mode] {
+   --tab-line-color: hsla(280, 30%, 80%, 0.9) !important;
+}
