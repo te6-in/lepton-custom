@@ -33,6 +33,10 @@
   border-bottom: none !important;
 }
 
+.titlebar-buttonbox:-moz-locale-dir(ltr) {
+  margin-left: 19px !important;
+}
+
 /* Tab Bar */
 
 #TabsToolbar {
